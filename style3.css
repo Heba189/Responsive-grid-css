@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("https://source.unsplash.com/1920x1080") center no-repeat; */
+  background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900") center
+    no-repeat;
+  position: relative;
+}
+
+body:hover::before {
+  content: "";
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  transform: scale(50%, 50%);
+  color: aliceblue;
+  font-weight: 900;
+  opacity: 0;
+}
+body:hover p {
+  opacity: 1;
+}
